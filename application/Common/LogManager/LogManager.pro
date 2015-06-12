@@ -8,6 +8,10 @@ INCLUDEPATH += . ../..
 TEMPLATE = lib
 CONFIG += staticlib create_prl
 
+QMAKE_CXXFLAGS += $$(CXXFLAGS)
+QMAKE_CFLAGS += $$(CFLAGS)
+QMAKE_LFLAGS += $$(LDFLAGS)
+
 include(../common.pri)
 
 DEFINES += LOGMANAGER_LIBRARY

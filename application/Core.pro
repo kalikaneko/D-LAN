@@ -1,6 +1,9 @@
 TEMPLATE = subdirs
 CONFIG += ordered
 MAKEFILE = Makefile-Core
+QMAKE_CXXFLAGS += $$(CXXFLAGS)
+QMAKE_CFLAGS += $$(CFLAGS)
+QMAKE_LFLAGS += $$(LDFLAGS)
 SUBDIRS = Common \
    Common/LogManager \
    Core/FileManager \

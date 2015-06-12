@@ -372,7 +372,7 @@ void Tests::mapArray()
 
 void Tests::transferRateCalculator()
 {
-   QSKIP("TODO: Rewrite this test, take too much time.");
+   //QSKIP("TODO: Rewrite this test, take too much time.");
 
    TransferRateCalculator t;
    QCOMPARE(t.getTransferRate(), 0);
